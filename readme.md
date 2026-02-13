@@ -12,17 +12,16 @@ npm i discordjs-security
 
 ## Quick start
 
-```ts
-import {
+```
+## Usage
+const {
   safeReply,
-  safeSend,
-  redact,
   createCooldownManager,
   guardGuildOnly,
   guardPermissions,
   filterContent,
   createSecureLogger
-} from "discordjs-security";
+} = require("discordjs-security");
 
 // Example: safe reply (no pings)
 await safeReply(interaction, { content: "Hello!", ephemeral: true });
